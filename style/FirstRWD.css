@@ -1,0 +1,54 @@
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+}
+nav{
+	height:70px;
+	border: 1px solid #eee;
+	
+}
+#logo{
+	float: left;
+	height:100%;
+	position: relative;
+}
+
+#logo img{
+	/*position: absolute;
+	left:2px;*/
+}
+#sidebar{
+	float:right;
+	height:100%;
+}
+
+#sidebar li{
+	list-style-type: none;
+	display: inline-block;
+	border:1px solid #aaa;
+	
+}
+#sidebar li a {
+ 	text-decoration: none;
+ 	line-height: 100%;
+ 	color:grey;
+ 	padding-left: 2px;
+}
+
+#sidebar li a:hover{
+	color:#33CCCC;
+}
+
+#intro{
+	text-align: center;
+	padding: 40 0 ;
+	border: 1px solid #aaa;
+}
+
+#intro h1{
+	padding: 20 0;
+}
+
+#intro p{
+	padding: 0 180;
+}
