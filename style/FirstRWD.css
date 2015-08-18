@@ -5,34 +5,55 @@ body{
 nav{
 	height:70px;
 	border: 1px solid #eee;
-	
 }
+
 #logo{
 	float: left;
 	height:100%;
-	position: relative;
+	/*position: relative;*/
+	text-align: center;
+	/*line-height: 100%;*/
 }
 
-#logo img{
-	/*position: absolute;
-	left:2px;*/
+#logo a {
+	line-height: 70px;
+	margin-left: 20px;
+}
+/*#logo img{
+	display: inline-block;
+	position: absolute;
+	top:10px;
+	left:10px;
+}
+*/
+#logo span{
+/*	position: absolute;
+	top:20px;
+	left:60px;*/
+	font-size: 35px;
+	line-height: 70px;
 }
 #sidebar{
 	float:right;
 	height:100%;
 }
 
+#sidebar ul{
+	margin:0;
+	text-align: center;
+	height: 100%;
+}
 #sidebar li{
 	list-style-type: none;
 	display: inline-block;
-	border:1px solid #aaa;
-	
+	line-height: 70px;
+	/*border:1px solid #aaa;*/
+	padding-right: 10px;	
 }
 #sidebar li a {
  	text-decoration: none;
- 	line-height: 100%;
+ 	float:left;
  	color:grey;
- 	padding-left: 2px;
 }
 
 #sidebar li a:hover{
@@ -43,6 +64,8 @@ nav{
 	text-align: center;
 	padding: 40 0 ;
 	border: 1px solid #aaa;
+	background-image:url(../img/header.jpg); 
+	background-repeat: no-repeat;
 }
 
 #intro h1{
