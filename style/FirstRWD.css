@@ -66,6 +66,9 @@ nav{
 	color:red;
 }
 
+#dropdownlist{
+	display:none;
+}
 #intro{
 	text-align: center;
 	padding: 40 0 ;
@@ -82,8 +85,26 @@ nav{
 	padding: 0 180;
 }
 
+#dropdownlist{
+	float:right;
+	height: 100%;
+	text-align: center;
+	line-height: 70px;
+	padding-right: 
+}
+
+
 @media screen and (max-width: 768px){
 	body{
 		color:lime;
+
+	}
+
+	#sidebar{
+		display: none;
+	}
+
+	#dropdownlist{
+		display: initial;
 	}
 }
