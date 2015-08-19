@@ -32,6 +32,7 @@ nav{
 	left:60px;*/
 	font-size: 35px;
 	line-height: 70px;
+	color:grey;	
 }
 #sidebar{
 	float:right;
@@ -48,16 +49,21 @@ nav{
 	display: inline-block;
 	line-height: 70px;
 	/*border:1px solid #aaa;*/
-	padding-right: 10px;	
+	padding-right: 10px;
+
 }
 #sidebar li a {
  	text-decoration: none;
  	float:left;
- 	color:grey;
+ 	color:grey;	
 }
 
 #sidebar li a:hover{
 	color:#33CCCC;
+}
+
+.active{
+	color:red;
 }
 
 #intro{
@@ -74,4 +80,10 @@ nav{
 
 #intro p{
 	padding: 0 180;
+}
+
+@media screen and (max-width: 768px){
+	body{
+		color:lime;
+	}
 }
