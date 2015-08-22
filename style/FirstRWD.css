@@ -5,34 +5,30 @@ body{
 nav{
 	height:70px;
 	border: 1px solid #eee;
+	position: relative;
 }
 
 #logo{
 	float: left;
 	height:100%;
 	/*position: relative;*/
-	text-align: center;
+	
 	/*line-height: 100%;*/
 }
 
 #logo a {
-	line-height: 70px;
 	margin-left: 20px;
 }
-/*#logo img{
-	display: inline-block;
-	position: absolute;
-	top:10px;
-	left:10px;
+#logo img{
+	vertical-align: middle;
 }
-*/
+
 #logo span{
-/*	position: absolute;
-	top:20px;
-	left:60px;*/
 	font-size: 35px;
+	vertical-align: middle;
 	line-height: 70px;
 	color:grey;	
+
 }
 #sidebar{
 	float:right;
@@ -43,6 +39,7 @@ nav{
 	margin:0;
 	text-align: center;
 	height: 100%;
+
 }
 #sidebar li{
 	list-style-type: none;
@@ -62,19 +59,25 @@ nav{
 	color:#33CCCC;
 }
 
-.active{
-	color:red;
+.active a{
+	color:#33CCCC;
 }
 
-#dropdownlist{
-	display:none;
+#check{
+	background-color: transparent;
+	border:1px solid white;
+	border-radius: 10px;
 }
+
+
 #intro{
 	text-align: center;
 	padding: 40 0 ;
 	border: 1px solid #aaa;
-	background-image:url(../img/header.jpg); 
+	background-image:url(../img/sea.jpg); 
 	background-repeat: no-repeat;
+	color:white;
+
 }
 
 #intro h1{
@@ -88,12 +91,51 @@ nav{
 #dropdownlist{
 	float:right;
 	height: 100%;
+	width:100%;
 	text-align: center;
 	line-height: 70px;
-	padding-right: 
+	padding-right: 10px;
+	display:none;
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
 }
 
+#dropdownlist span{
+	display: block;
+	text-align: right;
+	padding-right:20px;
+}
 
+#dropdownlist ul{
+	margin: 0;
+	padding:0;
+	position: absolute;
+	top:71px;
+	width: 100%;
+}
+
+#dropdownlist li{
+	list-style-type: none;
+	background-color: rgba(0,153,255,0.97);
+	display: block;
+
+	
+}
+
+#dropdownlist li a{
+	text-decoration: none;
+	color:white;
+}
+
+#dropdownlist li a:hover{
+	color:#00007A;
+}
+
+.dropdownlist a{
+	color:#00007A;
+}
 @media screen and (max-width: 768px){
 	body{
 		color:lime;
