@@ -7,4 +7,15 @@ $(document).ready(function(){
 	$("#dropdownlist span").click(function(){
 		$("#dropdownlist").toggleClass("active");
 	});
+
+	$("#pagepiling").pagepiling({
+		afterRender:function(){
+			$("video").get(0).play();
+		}
+
+	});
+
+	$(".carousel").carousel({
+		interval:2000
+	});
 });

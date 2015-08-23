@@ -1,11 +1,16 @@
 body{
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
+	position: relative;
 }
 nav{
 	height:70px;
-	border: 1px solid #eee;
-	position: relative;
+	/*border: 1px solid #eee;*/
+	position: fixed;
+	z-index: 100;
+	background-color: white;
+	left:0;
+	right:0;
 }
 
 #logo{
@@ -70,21 +75,21 @@ nav{
 }
 
 
-#intro{
+#section1{
 	text-align: center;
 	padding: 40 0 ;
-	border: 1px solid #aaa;
+/*	border: 1px solid #aaa;*/
 	background-image:url(../img/sea.jpg); 
 	background-repeat: no-repeat;
 	color:white;
 
 }
 
-#intro h1{
+#section1 h1{
 	padding: 20 0;
 }
 
-#intro p{
+#section1 p{
 	padding: 0 180;
 }
 
@@ -146,6 +151,39 @@ nav{
 
 .dropdownlist a{
 	color:#00007A;
+}
+
+#section2 {
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+}
+
+#section2 h1{
+	text-align: center;
+}
+
+#section3 {
+	background-color: black;
+	background-size: cover;
+	color:white;
+	text-align: center;
+}
+#pp-nav{
+	display: none;
+}
+
+.carousel-pic{
+	height:547px;
+}
+
+#carousel1{
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+}
+
+#carousel2{
+	background-image: url(../img/sea.jpg);
+	background-size: cover;
 }
 @media screen and (max-width: 768px){
 	
